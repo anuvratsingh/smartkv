@@ -1,0 +1,21 @@
+[package]
+name = "smartkv"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "3.1.12"
+
+
+[[bin]]
+path = "src/main.rs"
+name = "smartkv"
+
+[lib]
+path = "src/lib.rs"
+
+[dev-dependencies]
+assert_cmd = "2.0.4"
+predicates = "2.1.1"
